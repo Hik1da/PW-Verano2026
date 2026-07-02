@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Instituto Tecnológico de Tepic</title>
+        <style> th,td { padding: 6px; }</style>
+    </head>
+    <body>
+        <header>
+            <h1 id="Inicio">Instituto Tecnológico de Tepic</h1>
+            <h3>Tecnológico Nacional de México</h3>
+            <img src="https://www.tepic.tecnm.mx/images/CINTILLA.jpg">
+        </header>
+        <hr>
+        <nav>
+            <a href="#Historia">Historia</a> |
+            <a href="#Carreras">Carreras</a> |
+            <a href="#Servicios">Servicios</a> |
+            <a href="#Registro">Registro</a> |
+            <a href="#Contacto">Contacto</a>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <h2 id="Historia">Historia</h2>
+                <p>El <strong>Instituto Tecnológico de Tepic</strong> forma parte del <strong>Tecnológico Nacional de México</strong> y cuenta con una amplia trayetoria en la formación de <em>profesionistas</em> comprometidos con el desarrollo del estado de <strong>Nayarit</strong>.</p>
+                <p>Actualmente ofrece programas educativos de calidad, promueve la <em>investigacion</em>, la <em>innovación</em> y el desarrollo tecnológico mediante una formación integral de sus estudiantes.</p>
+            </section>
+            <hr>
+            <section>
+                <h2 id="Carreras">Oferta Educativa</h2>
+                <h3>Ingenierías</h3>
+                <ul>
+                    <li>Ingeniería en Sistemas Computacionales</li>
+                    <li>Ingeniería Industrial</li>
+                    <li>Ingeniería Civil</li>
+                    <li>Ingeniería Mecatrónica</li>
+                    <li>Ingeniería Bioquímica</li>
+                    <li>Ingeniería Eléctrica</li>
+                </ul>
+                <h3>Proceso de Admisión</h3>
+                <ol>
+                    <li>Solicitar ficha.</li>
+                    <li>Realizar examen de admisión.</li>
+                    <li>Entregar documentación.</li>
+                    <li>Realizar inscripción.</li>
+                    <li>Iniciar clases.</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h2 id="Servicios">Servicios</h2>
+                <table border="1">
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Ubicación</th>
+                        <th>Horario</th>
+                    </tr>
+                    <tr>
+                        <td>Biblioteca</td>
+                        <td>Centro de Información</td>
+                        <td>8:00 - 19:00</td>
+                    </tr>
+                    <tr>
+                        <td>Centro de Cómputo</td>
+                        <td>Edificio Administrativo</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Control Escolar</td>
+                        <td>Edificio Administrativo</td>
+                        <td>9:00 - 17:00</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Galería</h2>
+                <img height="150px" src="https://www.meganoticias.mx/uploads/noticias/se-abre-convocatoria-de-admision-del-tecnologico-de-tepic-330210.jpeg">
+                <img height="150px" src="https://sic.cultura.gob.mx/images/39182">
+            </section>
+            <hr>
+            <section>
+                <h2 id="Registro">Registro de Aspirantes</h2>
+                <form>
+                    <fieldset>
+                        <legend>Datos del Aspirante</legend>
+                        <table border="1">
+                            <tr>
+                                <td>Nombre</td>
+                                <td><input type="text"></td>
+                                <td>Correo</td>
+                                <td><input type="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Contraseña</td>
+                                <td><input type="password"></td>
+                                <td>Edad</td>
+                                <td><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>Fecha de nacimiento</td>
+                                <td><input type="date"></td>
+                                <td>Hora de contacto</td>
+                                <td><input type="time"></td>
+                            </tr>
+                            <tr>
+                                <td>Carrera</td>
+                                <td>
+                                    <select>
+                                        <option>Ingeniería en Sistemas Computacionales</option>
+                                        <option>Ingeniería Industrial</option>
+                                        <option>Ingeniería Civil</option>
+                                        <option>Ingeniería Mecatrónica</option>
+                                        <option>Ingeniería Bioquímica</option>
+                                        <option>Ingeniería Eléctrica</option>
+                                    </select>
+                                </td>
+                                <td>Semestre</td>
+                                <td>
+                                    <select>
+                                        <option>1°</option>
+                                        <option>2°</option>
+                                        <option>3°</option>
+                                        <option>4°</option>
+                                        <option>5°</option>
+                                        <option>6°</option>
+                                        <option>7°</option>
+                                        <option>8°</option>
+                                        <option>9°</option>
+                                        <option>10°</option>
+                                        <option>11°</option>
+                                        <option>12°</option>
+                                        <option>13°</option>
+                                        <option>14°</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Turno</td>
+                                <td colspan="3">
+                                    <input type="radio" name="turno" id="radio-matutino"><label for="radio-matutino">Matutino</label>
+                                    <input type="radio" name="turno" id="radio-vespertino"><label for="radio-vespertino">Vespertino</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Actividades</td>
+                                <td colspan="3">
+                                    <input type="checkbox" name="turno" id="checkbox-deporte"><label for="checkbox-deporte">Deportes</label>
+                                    <input type="checkbox" name="turno" id="checkbox-musica"><label for="checkbox-musica">Música</label>
+                                    <input type="checkbox" name="turno" id="checkbox-cultura"><label for="checkbox-cultura">Cultura</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Promedio</td>
+                                <td><input type="range"></td>
+                                <td>Fotografía</td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr>
+                                <td>Comentarios</td>
+                                <td colspan="3">
+                                    <textarea rows="6" cols="80"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;"><input type="submit" value="Enviar"></td>
+                                <td colspan="2" style="text-align: center;"><button>Limpiar</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <h2 id="Contacto">Contacto</h2>
+            <p>Av. Tecnológico No. 2595, Lagos del Country, Tepic, Nayarit.</p>
+            <p>Teléfono: (311) 211 9400</p>
+            <p>Correo: contacto@ittepic.edu.mx</p>
+            <a href="https://www.tepic.tecnm.mx/" target="_blank">Sitio Oficial del Instituto Tecnológico de Tepic</a>
+            <br><br>
+            <a href="#Inicio">Volver al inicio</a>
+        </footer>
+    </body>
+</html>
