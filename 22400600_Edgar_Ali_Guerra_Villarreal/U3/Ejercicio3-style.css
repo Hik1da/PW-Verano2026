@@ -1,0 +1,133 @@
+:root {
+    --main: #f2f2f2;
+    --secondary: #e3e6ea;
+    --text: #5d6060;
+    --accent: #323436;
+}
+
+* { margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+header {
+    background-color: var(--main);
+    padding: 10px 20px;
+    font-weight: 100;
+    user-select: none;
+}
+
+header h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: yellow;
+    color: black;
+    padding: 5px;
+    width: 35px;
+    white-space: nowrap;
+}
+
+nav {
+    background-color: var(--accent);
+    padding: 10px;
+    user-select: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary);
+
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    padding-bottom: 40px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: var(--main);
+    border-radius: 5px;
+}
+
+main h2 {
+    font-size: 20px;
+}
+
+main h3 {
+    font-size: 15px;
+    margin-bottom: -10px;
+}
+
+img#entry-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    grid-column: span 2;
+}
+
+form, fieldset {
+    width: fit-content;
+    padding: 10px;
+}
+
+section table {
+    border: 1px solid #bcc3c9;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 2px 10px;
+    border-color: #bcc3c9;
+}
+
+th {
+    background-color: #bcc3c9;
+}
+
+input.file {
+    max-width: 210px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+textarea {
+    width: 80%;
+}
+
+footer {
+    background-color: #292b2d;
+    padding: 20px 50px;
+    color: whitesmoke;
+}
+
+footer h2, h3 {
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--accent);
+    padding: 0 20px;
+}
