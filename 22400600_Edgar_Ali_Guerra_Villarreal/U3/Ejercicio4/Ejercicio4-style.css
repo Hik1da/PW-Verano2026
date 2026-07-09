@@ -1,0 +1,111 @@
+:root {
+    font-family: Helvetica, Arial, sans-serif;
+    --logo: #1877f2;
+    --azul: #0866ff;
+    --verde: #42b72a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e5e3ee;
+}
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (min-width: 1100px) {
+    #container {
+        flex-direction: row;
+    }
+
+    header h1, header p { text-align: left !important; }
+}
+
+header, main {
+}
+
+header {
+    width: 500px;
+}
+header h1 {
+    text-align: center;
+    font-size: 56px;
+    color: var(--logo);
+}
+header p {
+    text-align: center;
+    font-size: 20px;
+}
+
+h1, p { user-select: none; }
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+main, section, form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section a {
+    font-size: 12px;
+    margin: auto;
+    color: var(--azul);
+}
+
+section a:hover { text-decoration: underline; }
+
+section hr {
+    background-color: lightgray;
+    height: 1px;
+    border: none;
+    margin: 0 20px;
+}
+
+form input {
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+a, .button {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.button {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border: none !important;
+    color: white;
+}
+
+input.button { background-color: var(--azul); }
+button.button { background-color: var(--verde); }
+
+main p { font-size: 12px; margin: 0 24px;}
