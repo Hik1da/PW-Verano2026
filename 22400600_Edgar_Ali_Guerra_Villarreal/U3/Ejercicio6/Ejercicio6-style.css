@@ -1,0 +1,136 @@
+:root {
+    --primary-text: #fff;
+    --secondary-text: #888;
+    --twitter-blue: #26a7de;
+    --background: #000;
+}
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: var(--background);
+    color: var(--primary-text);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    width: 100vw;
+    max-width: 320px;
+    padding-bottom: 10rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--secondary-text);
+    font-weight: 400;
+    font-size: 12px;
+}
+footer > * {
+    white-space: nowrap;
+}
+footer > *:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; cursor: pointer; }
+
+#x-icon {
+    width: 256px;
+
+    aspect-ratio: 1;
+
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg');
+    background-size: contain; /* Scaled to fit */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main { gap: 0px; }
+section { gap: 20px; }
+form { gap: 10px; align-items: start; }
+
+section h1 { font-size: 32px; text-align: center; }
+section h2 { font-size: 20px; }
+
+form { width: 100%; }
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-weight: 700;
+    background-color: var(--primary-text);
+}
+
+button#create-account {
+    background-color: var(--twitter-blue);
+    color: var(--primary-text);
+}
+
+button#login {
+    background-color: var(--background);
+    color: var(--twitter-blue);
+    box-shadow: inset 0 0 0 1px var(--secondary-text);
+}
+
+.hr-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: var(--secondary-text);
+}
+
+hr {
+    border: none;
+    background-color: var(--secondary-text);
+    height: 1px;
+}
+
+section p { color: var(--secondary-text); font-size: 12px; }
+section a { color: var(--twitter-blue); }
+section a:hover { text-decoration: none; }
+
+h3 { margin-top: 3rem;}
+
+@media (min-width: 1100px) {
+    main { flex-direction: row; }
+    section {
+        padding-bottom: 0;
+        align-items: start;
+    }
+    section h1 { text-align: left; }
+    #x-icon { width: 512px; }
+}
