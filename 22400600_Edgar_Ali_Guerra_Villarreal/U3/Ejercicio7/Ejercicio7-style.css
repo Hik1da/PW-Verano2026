@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #55DDF6;
+    --primary-background: #020713;
+    --secondary-background: #27292E;
+    --primary-text: #fff;
+    --secondary-text: #bbb;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+}
+
+p { color: var(--secondary-text); }
+
+header {
+    background-image: url("assets/main-hero-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    padding: 20px 40px;
+}
+
+header button {
+    background-color: #0000007c;
+    color: var(--primary-text);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    border: 1px solid var(--primary-text);
+    border-radius: 6px;
+
+    align-self: flex-end;
+
+    padding: 8px 18px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header img#icon { width: 150px; }
+header img#products { width: 80%; max-width: 600px; }
+header form {
+    border-radius: 6px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    max-width: 450px;
+}
+header form input {
+    border: none;
+
+    padding: 0 20px;
+    height: 40px;
+}
+input.email {
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+}
+input.submit {
+    background-color: var(--primary);
+    text-transform: uppercase;
+}
+header p, a { font-size: 12px; color: var(--secondary-text); }
+header a { font-weight: bold; }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+section#gallery {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+}
+section#gallery div {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+section#gallery div#starwars {
+    background-image: url("assets/starwars.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin: 20px 0;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-indent: 24px;
+}
+
+nav#catalog-movies {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    justify-content: center;
+    
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+nav#catalog-movies div {
+    width: 20%;
+    max-width: 150px;
+    user-select: none;
+    cursor: pointer;
+}
+nav#catalog-movies div img {
+    width: 100%;
+}
+
+section#plans {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    max-width: 900px;
+    text-align: center;
+}
+
+section#plans table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    border: 1px solid var(--secondary-background);
+    overflow: hidden;
+}
+
+th {
+    border-top: none !important;
+    background-color: var(--secondary-background);
+    text-transform: uppercase;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid var(--secondary-background);
+    border-bottom: none;
+    border-left: none;
+}
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+section#catalog-sports {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 1000px;
+}
+section#catalog-sports div {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+section#catalog-sports div img {
+    width: 30%;
+    max-width: 200px;
+    user-select: none;
+    cursor: pointer;
+}
+
+section#fav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 1000px;
+    text-align: center;
+}
+section#fav img {
+    width: 100%;
+}
+
+footer p {
+    margin: 20px;
+    text-align: center;
+}
